@@ -9,6 +9,7 @@
 
 
 filename=$(basename -- "$1")
+outfilename=$(basename -- "$2")
 cp $1 $filename
-docker run -v="$PWD:/data/"  --rm -t ransomwarezz/reportgen:latest $filename $2
+docker run -v="$PWD:/data/"  --rm -t ransomwarezz/reportgen:latest $filename $outfilename
 rm $filename
