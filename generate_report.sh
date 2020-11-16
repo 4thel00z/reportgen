@@ -17,7 +17,6 @@ fi
 pandoc $1 -o $2 \
 --template /usr/share/pandoc/data/templates/eisvogel.latex \
 --from markdown+yaml_metadata_block+raw_html \
---template eisvogel.latex \
 --table-of-contents \
 --toc-depth 6 \
 --number-sections \
