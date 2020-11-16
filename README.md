@@ -4,10 +4,13 @@ Magic script which uses [latex eisvogel](https://github.com/Wandmalfarbe/pandoc-
 
 ## Example usage
 
+You can use our convenient oneliner here:
 ```
-docker run -v="$PWD:/data/"  --rm -t ransomwarezz/reportgen:latest some-file.md output-file.pdf
+curl  --proto '=https' --tlsv1.2 -L -sSf  https://shortly.fun/genreport  | zsh -s example.md example.pdf
 ```
+... which produces this PDF out of [this markdown](https://github.com/4thel00z/reportgen/blob/master/example.md):
 
+![Example rendering](https://github.com/4thel00z/reportgen/raw/master/example.png)
 
 ## License
 
