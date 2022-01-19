@@ -23,6 +23,6 @@ else
 	docker run -v="$PWD/$filename:/data/$filename" $@ -v "$tmp_dir:/data/" --rm -t ransomwarezz/reportgen:latest $filename $outfilename
 fi
 
-mv $tmp_dir/$outfilename $2
+mv $tmp_dir/$outfilename $outfilename
 rm -rf $tmp_dir
 `[[ $filename -ef $1 ]] || rm $filename`
