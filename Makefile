@@ -1,5 +1,9 @@
 build:
-	docker build -t reportgen:latest .
+	docker build -t ransomwarezz/reportgen:latest .
+
+push: build
+	docker push ransomwarezz/reportgen:latest
+
 test: build
 	docker run -v="${PWD}:/data/"  --rm -t reportgen:latest example.md example.pdf
 test-remote:
