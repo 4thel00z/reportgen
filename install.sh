@@ -9,3 +9,4 @@ tlmgr install sourcesanspro
 tlmgr install ly1
 tlmgr install sourcecodepro
 tlmgr install titling
+tlmgr install koma-script
