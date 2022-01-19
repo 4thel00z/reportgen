@@ -10,3 +10,6 @@ tlmgr install ly1
 tlmgr install sourcecodepro
 tlmgr install titling
 tlmgr install koma-script
+tlmgr install fvextra
+tlmgr install lineno
+tlmgr install float
