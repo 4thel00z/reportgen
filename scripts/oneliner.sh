@@ -25,4 +25,3 @@ fi
 
 mv $tmp_dir/$outfilename $outfilename
 rm -rf $tmp_dir
-`[[ $filename -ef $1 ]] || rm $filename`
